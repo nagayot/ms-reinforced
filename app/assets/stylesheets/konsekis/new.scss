@@ -1,0 +1,40 @@
+* {
+  //text-align            : center;
+  a {
+    color               : black;
+    text-decoration     : none;
+  }
+}
+
+.konsekibody {
+  background-image      : url(landscapenight.png);
+  background-size       : cover;
+  background-repeat     : no-repeat;
+  height                : 100vh;
+  position: relative;
+  &__contents {
+    width               : 100%;
+    max-width           : 1040px;
+    position            : relative;
+    &__mainbox {
+      width             : 900px;
+      height            : 500px;
+      background-color  : #d4d3d3;
+      position          : absolute;
+      margin            : 57px 0 0 270px;
+
+      .sub-box1 {
+        width: 200px;
+      }
+      .sub-box2 {
+
+      }
+      .sub-box3 {
+
+      }
+      .sub-box4 {
+
+      }
+    }
+  }
+}

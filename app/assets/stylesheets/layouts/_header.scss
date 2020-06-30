@@ -1,0 +1,26 @@
+.header {
+  width          : 100vw;
+  margin         : auto;
+  text-align     : center;
+  background     : url(momiji.png);
+  height         : 150px;
+  &__contents {
+
+    &__title {
+      font-weight: bold;
+      font-size  : 40px;
+      padding-top: 25px;
+      a {
+        color    : #ffffff;
+      }
+
+      .title{
+        color    : #ffffff;
+      }
+    }
+    &__subtitle {
+      font-size  : 18px;
+      color      : #ffffff;
+    }
+  }
+}

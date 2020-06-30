@@ -1,0 +1,71 @@
+* {
+  text-align            : center;
+  a {
+    color               : black;
+    text-decoration     : none;
+  }
+}
+
+.body {
+  background-image      : url(landscapenight.png);
+  background-size       : cover;
+  background-repeat     : no-repeat;
+  height                : 100vh;
+  &__contents {
+    width               : 100%;
+    max-width           : 1040px;
+    position            : relative;
+
+    &__rightbox {
+      background-color  : #f5f5f5;
+      float             : right;
+      width             : 300px;
+      height            : 200px;
+      margin            : 180px 0 0 0;
+      position          : relative;
+      a {
+        position        : absolute;
+        left            : 0;
+        height          : 100%;
+        width           : 100%;
+        line-height     : 10;
+      }
+      a:hover{
+        color           : #ff7043;
+      }
+      &:hover {
+        background-color: rgb(214, 205, 205);
+      }
+      &__inside {
+        font-weight     : bold;
+        font-size       : 20px;
+      }
+    }
+
+    &__leftbox {
+      background-color  : #f5f5f5;
+      width             : 300px;
+      height            : 200px;
+      float             : left;
+      margin            : 180px 0 0 400px;
+      position          : relative;
+      a {
+        position        : absolute;
+        left            : 0;
+        height          : 100%;
+        width           : 100%;
+        line-height     : 10;
+      }
+      a:hover{
+        color           : #ff7043;
+      }
+      &:hover {
+        background-color: rgb(214, 205, 205);
+      }
+      &__inside{
+        font-weight     : bold;
+        font-size       : 20px;
+      }
+    }
+  }
+}
