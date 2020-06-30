@@ -23,17 +23,28 @@
       position          : absolute;
       margin            : 57px 0 0 270px;
 
-      .sub-box1 {
-        width: 200px;
+      .group1 {
+        .sub-box-name {
+          
+        }
+        .sub-box1 {
+          width: 200px;
+        }
       }
-      .sub-box2 {
-
+      .group2 {
+        .sub-box2 {
+          width: 200px;
+        }
       }
-      .sub-box3 {
-
+      .group3 {
+        .sub-box3 {
+          width: 200px;
+        }
       }
-      .sub-box4 {
-
+      .group4 {
+        .sub-box4 {
+          width: 200px;
+        }
       }
     }
   }
