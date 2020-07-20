@@ -1,0 +1,2 @@
+class Starforce < ApplicationRecord
+end
