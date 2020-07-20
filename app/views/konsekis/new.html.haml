@@ -1,25 +1,45 @@
-= render partial: "layouts/header"
-.konsekibody
-  .konsekibody__contents
-    .konsekibody__contents__mainbox
-    
-      .group1
-        .sub-box-name
-          強化したい装備
-        .sub-box1
-          //= f.text_field, class: 'sub-box1__status', placeholder: "A / MA"
+%body
+  = render partial: "layouts/header"
+  .konseki-body
+    .konseki-body__contents
+      .konseki-body__contents__form
+        = form_with(model: @item, local: true) do |f|
 
-      .group2
-        .sub-box-name
-          使う強化書
-        .sub-box2
+          .field1
+            .field-label
+              = f.label :item, "どの強化書を貼る？"
+              %br/
+            .field-input1
+              = render partial: "layouts/konseki-new-input2"
+          
+          .field2
+            .field-label
+              = f.label :item, "貼る回数は？"
+              %br/
+            .field-input2
+              = render partial: "layouts/konseki-new-input3"
 
-      .group3
-        .sub-box-name
-          強化回数
-        .sub-box3
+          .field3
+            .field-label
+              = f.label :item, "強化したい装備のステータス"
+              %br/
+            .field-input3-1
+              攻撃/魔力
+              %input#k-ama{type: "text"}/
+            .field-input3-2
+              メインステータス
+              %input#k-status{type: "text"}/
 
-      .group4
-        .sub-box-name
-          結果物
-        .sub-box4
+          .field4
+            .field-label
+              = f.label :item, "完成したやつ！"
+              %br/
+            .field-input4-1
+              攻撃/魔力
+              = f.text_field :k_ama_result, id: 'k-ama-result', type: "text"
+            .field-input4-2
+              メインステータス
+              = f.text_field :k_status_result, id: 'k-status-result', type: "text"
+
+          .reset-btn
+            %input{type: "reset", value: "リセットする"}
