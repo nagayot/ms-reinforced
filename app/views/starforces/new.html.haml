@@ -1,1 +1,38 @@
-= render partial: "layouts/header"
+%body
+  = render partial: "layouts/header"
+  .starforce-body
+    .starforce-body__contents
+      .starforce-body__contents__form
+        = form_with(model: @item, local: true) do |f|
+
+          .field1
+            .field-label
+              = f.label :item, "何星強化する？"
+              %br/
+            .field-input1-1
+              = render partial: "layouts/starforce-new-input2"
+
+          .field2
+            .field-label
+              = f.label :item, "強化したい装備のステータス"
+              %br/
+            .field-input2-1
+              攻撃or魔力
+              %input#sf-ama{type: "text"}/
+            .field-input2-2
+              メインステータス
+              %input#sf-status{type: "text"}/
+
+          .field3
+            .field-label
+              = f.label :item, "完成したやつ！"
+              %br/
+            .field-input3-1
+              攻撃or魔力
+              = f.text_field :sf_ama_result, id: 'sf-ama-result', type: "text"
+            .field-input3-2
+              メインステータス
+              = f.text_field :sf_status_result, id: 'sf-status-result', type: "text"
+
+          .reset-btn
+            %input{type: "reset", value: "リセットする"}
