@@ -1,5 +1,5 @@
 $(function() {
-  $('#k-ama').change(function(){       //攻撃or魔力の計算
+  $('#k-ama').change(function(){       //攻撃 or 魔力の計算
     var k_ama_moto = $('#k-ama').val();
     var k_ama_kyouka = $('#kyouka-ama').val();
     var k_ama_kaisu = $('#k-kaisu').val();
