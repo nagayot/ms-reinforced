@@ -42,13 +42,29 @@
           font-weight             : bold;
           margin                  : 30px 0 10px 0; 
         }
-        .sf-box{
-          height                  : 30px;
-          margin                  : 5px;
-        }
 
         .field {
           .field-input {
+          }
+          #sf-require-level {
+            height                : 30px;
+            margin                : 5px;
+          }
+          #sf-ama-kaisu-under15 {
+            height                : 30px;
+            margin                : 5px;
+          }
+          #sf-status-kaisu-under15 {
+            height                : 30px;
+            margin                : 5px;
+          }
+          #sf-ama-kaisu-over15 {
+            height                : 30px;
+            margin                : 5px;
+          }
+          #sf-status-kaisu-over15 {
+            height                : 30px;
+            margin                : 5px;
           }
         }
 
@@ -79,11 +95,6 @@
 
 @media screen and (max-width: 479px) {        // スマホ表示
   .starforce-body {
-    // background-color              : #f5f5f5;
-    // background-size               : cover;
-    // background-repeat             : no-repeat;
-    // position                      : relative;
-
     .link-to-konseki {
       padding                     : 0.3em 1em;
       text-decoration             : none;
@@ -107,7 +118,7 @@
       position                    : relative;
 
       &__form {
-        width                     : 100%;
+        width                     : 95%;
         background-color          : #d4d3d3;
         position                  : absolute;
         margin                    : 20px 10px 10px 10px;
@@ -120,22 +131,41 @@
           font-weight             : bold;
           margin                  : 30px 0 10px 0; 
         }
-        .sf-box{
-          height                  : 30px;
-          margin                  : 5px;
-        }
 
         .field {
           .field-input {
           }
+          #sf-require-level {
+            height                : 30px;
+            margin                : 5px;
+          }
+          #sf-ama-kaisu-under15 {
+            height                : 30px;
+            margin                : 5px;
+          }
+          #sf-status-kaisu-under15 {
+            height                : 30px;
+            margin                : 5px;
+          }
+          #sf-ama-kaisu-over15 {
+            height                : 30px;
+            margin                : 5px;
+          }
+          #sf-status-kaisu-over15 {
+            height                : 30px;
+            margin                : 5px;
+          }
         }
 
         .field-2 {
+          
           .field-input-2-1 {
+            font-size             : 14px;
           }
           .field-input-2-2 {
+            font-size             : 14px;
             margin                : 2px;
-            padding-right         : 46px;
+            padding-right         : 40px;
           }
         }
 

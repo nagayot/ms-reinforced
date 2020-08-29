@@ -47,6 +47,12 @@
           margin                  : 30px 0 10px 0; 
         }
         .konseki-box{
+        }
+        #kyouka-ama {
+          height                  : 30px;
+          margin                  : 5px;
+        }
+        #kyouka-status {
           height                  : 30px;
           margin                  : 5px;
         }
@@ -104,7 +110,7 @@
       position                    : relative;
       
       &__form {
-        width                     : 100%;
+        width                     : 95%;
         background-color          : #d4d3d3;
         position                  : absolute;
         margin                    : 20px 10px 10px 10px;
@@ -118,11 +124,17 @@
           margin                  : 30px 0 10px 0; 
         }
         .konseki-box{
-          height                  : 30px;
+        }
+        #kyouka-ama {
+          height                  : 25px;
+          margin                  : 5px;
+        }
+        #kyouka-status {
+          height                  : 25px;
           margin                  : 5px;
         }
         #k-kaisu {
-          height                  : 30px;
+          height                  : 25px;
         }
 
         .field {
@@ -133,10 +145,12 @@
         .field-2 {
           .field-input-2-1 {
             margin                : 2px;
+            font-size             : 14px;
           }
           .field-input-2-2 {
             margin                : 2px;
-            padding-right         : 46px;
+            padding-right         : 40px;
+            font-size             : 14px;
           }
         }
 
