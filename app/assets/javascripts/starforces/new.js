@@ -1,7 +1,7 @@
-$(function () {
-  $('#sf-ama-under15').change(function(){                               // ☆15までの攻撃or魔力の計算
-    var sf_ama_under15 = $('#sf-ama-under15').val();                    // 入力された数値
-    var sf_ama_kaisu_under15 = $('#sf-ama-kaisu-under15').val();        // ドロップボックスで選択された回数
+$(function() {
+  $('.sf-box').change(function(){                                    // ☆15までの攻撃or魔力の計算
+    var sf_ama_under15 = $('#sf-ama-under15').val();                 // 入力された数値
+    var sf_ama_kaisu_under15 = $('#sf-ama-kaisu-under15').val();     // ドロップボックスで選択された回数
 
     for (var i = 1; i <= sf_ama_kaisu_under15; i++) {
       if(sf_ama_under15 >= 50 && sf_ama_under15 <= 99 ){
@@ -40,7 +40,7 @@ $(function () {
 
 
 
-  $('#sf-status-under15').change(function(){                            // ☆15までのメインステータスの計算
+  $('.sf-box').change(function(){                                       // ☆15までのメインステータスの計算
     var sf_status_under15 = $('#sf-status-under15').val();              // 入力された数値
     var sf_status_kaisu_under15 = $('#sf-status-kaisu-under15').val();  // ドロップボックスで選択された回数
 
@@ -57,7 +57,7 @@ $(function () {
 
 
 
-  $('#sf-ama-over15').change(function(){                               // ☆16〜の武器&防具の増加幅(攻撃or魔力)
+  $('.sf-box').change(function(){                                      // ☆16〜の武器&防具の増加幅(攻撃or魔力)
     var sf_require_level = $('#sf-require-level').val();               // 装備するための必須レベル
     var sf_ama_over15 = $('#sf-ama-over15').val();                     // 入力された数値
     var sf_ama_kaisu_over15 = $('#sf-ama-kaisu-over15').val();         // ドロップボックスで選択された回数
@@ -242,7 +242,7 @@ $(function () {
 
 
 
-  $('#sf-status-over15').change(function(){                            // ☆16〜の武器&防具の増加幅(メインステータス)
+  $('.sf-box').change(function(){                                      // ☆16〜の武器&防具の増加幅(メインステータス)
     var sf_require_level = $('#sf-require-level').val();               // 装備するための必須レベル
     var sf_status_over15 = $('#sf-status-over15').val();               // 入力された数値
     var sf_status_kaisu_over15 = $('#sf-status-kaisu-over15').val();   // ドロップボックスで選択された回数
