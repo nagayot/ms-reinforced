@@ -1,63 +1,154 @@
-* {
-  a {
-    color               : black;
-    text-decoration     : none;
+@media screen and (min-width: 767px) {        // pc表示
+  .starforce-body {
+    background-color              : #f5f5f5;
+    background-size               : cover;
+    background-repeat             : no-repeat;
+    position                      : relative;
+
+    .link-to-konseki {
+      float                       : left;
+      margin                      : 57px 0 0 60px;
+      padding                     : 0.3em 1em;
+      text-decoration             : none;
+      color                       : #67c5ff;
+      border                      : solid 2px #67c5ff;
+      border-radius               : 3px;
+      transition                  : .4s;
+      border-top-left-radius      : 20px;
+      border-top-right-radius     : 20px;
+      border-bottom-right-radius  : 20px;
+      border-bottom-left-radius   : 20px;
+    }
+    .link-to-konseki:hover {
+      background                  : #67c5ff;
+      color                       : white;
+    }
+
+    &__contents {
+      width                       : 100%;
+      max-width                   : 1040px;
+      position                    : relative;
+      &__form {
+        width                     : 900px;
+        background-color          : #d4d3d3;
+        position                  : absolute;
+        margin                    : 57px 0 57px 270px;
+        border-top-left-radius    : 20px;
+        border-top-right-radius   : 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius : 20px;
+
+        .field-label {
+          font-weight             : bold;
+          margin                  : 30px 0 10px 0; 
+        }
+        .sf-box{
+          height                  : 30px;
+          margin                  : 5px;
+        }
+
+        .field {
+          .field-input {
+          }
+        }
+
+        .field-2 {
+          .field-input-2-1 {
+          }
+          .field-input-2-2 {
+            margin                : 2px;
+            padding-right         : 46px;
+          }
+        }
+
+        .reset-btn {
+          margin                  : 20px 0 30px 0;
+        }
+        .bar {
+          width                   : 800px;
+          margin-top              : 40px;
+          background-color        : #fff;
+          border-width            : 1px 0 0 0;
+          border-color            : black;
+        }
+      }
+    }
   }
 }
 
-.starforce-body {
-  background-color      : #f5f5f5;
-  background-size       : cover;
-  background-repeat     : no-repeat;
-  height                : 100vh;
-  position              : relative;
-  &__contents {
-    width               : 100%;
-    max-width           : 1040px;
-    position            : relative;
-    &__form {
-      width             : 900px;
-      background-color  : #d4d3d3;
-      position          : absolute;
-      margin            : 57px 0 0 270px;
 
-      .field-label {
-        font-weight     : bold;
-        margin          : 30px 0 10px 0; 
-      }
-      .sf-box{
-        height          : 30px;
-        margin          : 5px;
-      }
+@media screen and (max-width: 479px) {        // スマホ表示
+  .starforce-body {
+    // background-color              : #f5f5f5;
+    // background-size               : cover;
+    // background-repeat             : no-repeat;
+    // position                      : relative;
 
-      .field1 {
-        .field-input1 {
-        }
-      }
+    .link-to-konseki {
+      padding                     : 0.3em 1em;
+      text-decoration             : none;
+      color                       : #67c5ff;
+      border                      : solid 2px #67c5ff;
+      border-radius               : 3px;
+      transition                  : .4s;
+      border-top-left-radius      : 20px;
+      border-top-right-radius     : 20px;
+      border-bottom-right-radius  : 20px;
+      border-bottom-left-radius   : 20px;
+    }
+    .link-to-konseki:hover {
+      background                  : #67c5ff;
+      color                       : white;
+    }
 
-      .field2 {
-        .field-input2-1 {
-        }
-        .field-input2-2 {
-          margin        : 2px;
-          padding-right : 46px;
-        }
-      }
+    &__contents {
+      width                       : 100%;
+      max-width                   : 1040px;
+      position                    : relative;
 
-      .field3 {
-        margin-top      : 70px;
-        padding-bottom  : 25px;
-        .field-input3-1 {
-          margin        : 2px;
-        }
-        .field-input3-2 {
-          margin        : 2px;
-          padding-right : 46px;
-        }
-      }
+      &__form {
+        width                     : 100%;
+        background-color          : #d4d3d3;
+        position                  : absolute;
+        margin                    : 20px 10px 10px 10px;
+        border-top-left-radius    : 20px;
+        border-top-right-radius   : 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius : 20px;
 
-      .reset-btn {
-        margin-bottom   : 20px;
+        .field-label {
+          font-weight             : bold;
+          margin                  : 30px 0 10px 0; 
+        }
+        .sf-box{
+          height                  : 30px;
+          margin                  : 5px;
+        }
+
+        .field {
+          .field-input {
+          }
+        }
+
+        .field-2 {
+          .field-input-2-1 {
+          }
+          .field-input-2-2 {
+            margin                : 2px;
+            padding-right         : 46px;
+          }
+        }
+
+        .reset-btn {
+          margin                  : 20px 0 30px 0;
+        }
+        .bar {
+          width                   : 300px;
+          margin-top              : 40px;
+          background-color        : #fff;
+          border-width            : 1px 0 0 0;
+          border-color            : black;
+        }
       }
     }
   }
