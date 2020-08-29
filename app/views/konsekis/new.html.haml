@@ -8,6 +8,17 @@
       .konseki-body__contents__form
         = form_with(model: @item, local: true) do |f|
 
+          .field-2
+            .field-label
+              = f.label :item, "強化したい装備のステータス"
+              %br/
+            .field-input-2-1
+              攻撃or魔力
+              %input#k-ama.konseki-box{type: "text"}/
+            .field-input-2-2
+              メインステータス
+              %input#k-status.konseki-box{type: "text"}/
+
           .field
             .field-label
               = f.label :item, "どの強化書を貼る？"
@@ -24,25 +35,14 @@
 
           .field-2
             .field-label
-              = f.label :item, "強化したい装備のステータス"
+              = f.label :item, "完成したやつ！"
               %br/
             .field-input-2-1
               攻撃or魔力
-              %input#k-ama{type: "text"}/
+              = f.text_field :k_ama_result, id: 'k-ama-result', class:'konseki-box' ,type: "text"
             .field-input-2-2
               メインステータス
-              %input#k-status{type: "text"}/
-
-          .field-2
-            .field-label
-              = f.label :item, "完成したやつ！"
-              %br/
-            .field-inpu-2-1
-              攻撃or魔力
-              = f.text_field :k_ama_result, id: 'k-ama-result', type: "text"
-            .field-input-2-2
-              メインステータス
-              = f.text_field :k_status_result, id: 'k-status-result', type: "text"
+              = f.text_field :k_status_result, id: 'k-status-result', class:'konseki-box' , type: "text"
 
           .reset-btn
             %input{type: "reset", value: "リセットする"}

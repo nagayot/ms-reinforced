@@ -8,6 +8,17 @@
       .starforce-body__contents__form
         = form_with(model: @item, local: true) do |f|
 
+          .field-2
+            .field-label
+              = f.label :item, "強化したい装備のステータス"
+              %br/
+            .field-input-2-1
+              攻撃or魔力
+              %input#sf-ama-under15.sf-box{type: "text"}/
+            .field-input-2-2
+              メインステータス
+              %input#sf-status-under15.sf-box{type: "text"}/
+
           .field
             .field-label
               = f.label :item, "何星強化する？(☆15まで)"
@@ -17,34 +28,34 @@
 
           .field-2
             .field-label
-              = f.label :item, "強化したい装備のステータス"
-              %br/
-            .field-input-2-1
-              攻撃or魔力
-              %input#sf-ama-under15{type: "text"}/
-            .field-input-2-2
-              メインステータス
-              %input#sf-status-under15{type: "text"}/
-
-          .field-2
-            .field-label
               = f.label :item, "完成したやつ！"
               %br/
             .field-input-2-1
               攻撃or魔力
-              = f.text_field :sf_ama_result_under15, id: 'sf-ama-result-under15', type: "text"
+              = f.text_field :sf_ama_result_under15, id: 'sf-ama-result-under15', class:'sf-box', type: "text"
             .field-input-2-2
               メインステータス
-              = f.text_field :sf_status_result_under15, id: 'sf-status-result-under15', type: "text"
+              = f.text_field :sf_status_result_under15, id: 'sf-status-result-under15', class:'sf-box', type: "text"
 
           .reset-btn
             %input{type: "reset", value: "リセットする"}
 
             %hr.bar
 
+          .field-2
+            .field-label
+              = f.label :item, "強化したい装備(☆15)のステータス"
+              %br/
+            .field-input-2-1
+              攻撃or魔力
+              %input#sf-ama-over15.sf-box{type: "text"}/
+            .field-input-2-2
+              メインステータス
+              %input#sf-status-over15.sf-box{type: "text"}/
+
           .field
             .field-label
-              = f.label :item, "もっと強化する？(☆16〜)"
+              = f.label :item, "何星強化する？(☆16〜)"
               %br/
             .field-input
               = render partial: "layouts/starforce-new-input4"
@@ -58,25 +69,14 @@
 
           .field-2
             .field-label
-              = f.label :item, "強化したい装備のステータス"
-              %br/
-            .field-input-2-1
-              攻撃or魔力
-              %input#sf-ama-over15{type: "text"}/
-            .field-input-2-2
-              メインステータス
-              %input#sf-status-over15{type: "text"}/
-
-          .field-2
-            .field-label
               = f.label :item, "完成したやつ！"
               %br/
             .field-input-2-1
               攻撃or魔力
-              = f.text_field :sf_ama_result_over15, id: 'sf-ama-result-over15', type: "text"
+              = f.text_field :sf_ama_result_over15, id: 'sf-ama-result-over15', class:'sf-box', type: "text"
             .field-input-2-2
               メインステータス
-              = f.text_field :sf_status_result_over15, id: 'sf-status-result-over15', type: "text"
+              = f.text_field :sf_status_result_over15, id: 'sf-status-result-over15', class:'sf-box', type: "text"
 
           .reset-btn
             %input{type: "reset", value: "リセットする"}
