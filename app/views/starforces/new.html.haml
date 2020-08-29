@@ -1,38 +1,82 @@
 %body
   = render partial: "layouts/header"
   .starforce-body
+    %a.link-to-konseki{:href => "/konsekis/new"}
+      %i.fa.fa-caret-right
+        痕跡強化へ
     .starforce-body__contents
       .starforce-body__contents__form
         = form_with(model: @item, local: true) do |f|
 
-          .field1
+          .field
             .field-label
-              = f.label :item, "何星強化する？"
+              = f.label :item, "何星強化する？(☆15まで)"
               %br/
-            .field-input1-1
-              = render partial: "layouts/starforce-new-input2"
+            .field-input
+              = render partial: "layouts/starforce-new-input3"
 
-          .field2
+          .field-2
             .field-label
               = f.label :item, "強化したい装備のステータス"
               %br/
-            .field-input2-1
+            .field-input-2-1
               攻撃or魔力
-              %input#sf-ama{type: "text"}/
-            .field-input2-2
+              %input#sf-ama-under15{type: "text"}/
+            .field-input-2-2
               メインステータス
-              %input#sf-status{type: "text"}/
+              %input#sf-status-under15{type: "text"}/
 
-          .field3
+          .field-2
             .field-label
               = f.label :item, "完成したやつ！"
               %br/
-            .field-input3-1
+            .field-input-2-1
               攻撃or魔力
-              = f.text_field :sf_ama_result, id: 'sf-ama-result', type: "text"
-            .field-input3-2
+              = f.text_field :sf_ama_result_under15, id: 'sf-ama-result-under15', type: "text"
+            .field-input-2-2
               メインステータス
-              = f.text_field :sf_status_result, id: 'sf-status-result', type: "text"
+              = f.text_field :sf_status_result_under15, id: 'sf-status-result-under15', type: "text"
+
+          .reset-btn
+            %input{type: "reset", value: "リセットする"}
+
+            %hr.bar
+
+          .field
+            .field-label
+              = f.label :item, "もっと強化する？(☆16〜)"
+              %br/
+            .field-input
+              = render partial: "layouts/starforce-new-input4"
+
+          .field
+            .field-label
+              = f.label :item, "装備するのに必要なレベルは？"
+              %br/
+            .field-input
+              = render partial: "layouts/starforce-new-input2"
+
+          .field-2
+            .field-label
+              = f.label :item, "強化したい装備のステータス"
+              %br/
+            .field-input-2-1
+              攻撃or魔力
+              %input#sf-ama-over15{type: "text"}/
+            .field-input-2-2
+              メインステータス
+              %input#sf-status-over15{type: "text"}/
+
+          .field-2
+            .field-label
+              = f.label :item, "完成したやつ！"
+              %br/
+            .field-input-2-1
+              攻撃or魔力
+              = f.text_field :sf_ama_result_over15, id: 'sf-ama-result-over15', type: "text"
+            .field-input-2-2
+              メインステータス
+              = f.text_field :sf_status_result_over15, id: 'sf-status-result-over15', type: "text"
 
           .reset-btn
             %input{type: "reset", value: "リセットする"}
