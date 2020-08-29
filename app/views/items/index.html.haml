@@ -3,7 +3,8 @@
   .body__contents
     .body__contents__rightbox
       .body__contents__rightbox__inside
-        = link_to "痕跡強化シミュレーション", new_konseki_path
+        %a.btn-to-konseki{:href => "/konsekis/new"} ◎痕跡強化へ
+
     .body__contents__leftbox
       .body__contents__leftbox__inside
-        = link_to "スタフォ強化シミュレーション", new_starforce_path
+        %a.btn-to-sf{:href => "/starforces/new"} ◎スターフォース強化へ
