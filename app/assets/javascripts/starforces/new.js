@@ -33,6 +33,15 @@ $(function() {
 
       }else if (sf_ama_under15 >= 500 && sf_ama_under15 <= 549) {
         sf_ama_under15 = parseInt(sf_ama_under15) + parseInt(11);
+
+      }else if (sf_ama_under15 >= 550 && sf_ama_under15 <= 599) {
+        sf_ama_under15 = parseInt(sf_ama_under15) + parseInt(12);
+
+      }else if (sf_ama_under15 >= 600 && sf_ama_under15 <= 650) {
+        sf_ama_under15 = parseInt(sf_ama_under15) + parseInt(13);
+      
+      }else if (sf_ama_under15 > 651) {
+        sf_ama_under15 = "盛りすぎでは・・・？";
       }
     };
     $('#sf-ama-result-under15').val(sf_ama_under15);
