@@ -1,26 +1,60 @@
-.header {
-  width          : 100vw;
-  margin         : auto;
-  text-align     : center;
-  background     : url(momiji.png);
-  height         : 150px;
-  &__contents {
+@media screen and (min-width: 767px) {      // pc表示
+  .header {
+    margin                    : 20px 40px;
+    text-align                : center;
+    background                : url(ms-haikei.jpg);
+    background-size           : cover;
+    height                    : 150px;
+    border-top-left-radius    : 20px;
+    border-top-right-radius   : 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius : 20px;
 
-    &__title {
-      font-weight: bold;
-      font-size  : 40px;
-      padding-top: 25px;
-      a {
-        color    : #ffffff;
+    &__contents {
+      &__title {
+        font-weight           : bold;
+        font-size             : 40px;
+        padding-top           : 25px;
+        a {
+          color               : #ffffff;
+        }
       }
 
-      .title{
-        color    : #ffffff;
+      &__subtitle {
+        font-weight           : bold;
+        font-size             : 16px;
+        color                 : #ffffff;
       }
     }
-    &__subtitle {
-      font-size  : 18px;
-      color      : #ffffff;
+  }
+}
+
+
+@media screen and (max-width: 479px) {      // スマホ表示
+  .header {
+    margin                    : 20px 40px;
+    text-align                : center;
+    background                : url(ms-haikei.jpg);
+    background-size           : cover;
+    height                    : 150px;
+    border-top-left-radius    : 20px;
+    border-top-right-radius   : 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius : 20px;
+
+    &__contents {
+      &__title {
+        font-weight           : bold;
+        font-size             : 40px;
+        padding-top           : 25px;
+        a {
+          color               : #ffffff;
+        }
+      }
+
+      &__subtitle {
+        display:none;
+      }
     }
   }
 }

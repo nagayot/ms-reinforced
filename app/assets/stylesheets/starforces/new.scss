@@ -1,36 +1,33 @@
 @media screen and (min-width: 767px) {        // pc表示
-  .konseki-body {
+  .starforce-body {
     background-color              : #f5f5f5;
     background-size               : cover;
     background-repeat             : no-repeat;
     position                      : relative;
-    
 
-    .link-to-sf {
+    .link-to-konseki {
       float                       : left;
-      margin                      : 57px 0 0 30px;
+      margin                      : 57px 0 0 60px;
       padding                     : 0.3em 1em;
       text-decoration             : none;
-      color                       : black;
-      border                      : solid 2px black;
+      color                       : #67c5ff;
+      border                      : solid 2px #67c5ff;
       border-radius               : 3px;
       transition                  : .4s;
       border-top-left-radius      : 20px;
       border-top-right-radius     : 20px;
       border-bottom-right-radius  : 20px;
       border-bottom-left-radius   : 20px;
-
     }
-    .link-to-sf:hover {
-      background                  : black;
-      color                       : rgb(255, 232, 23);
+    .link-to-konseki:hover {
+      background                  : #67c5ff;
+      color                       : white;
     }
 
     &__contents {
       width                       : 100%;
       max-width                   : 1040px;
       position                    : relative;
-      
       &__form {
         width                     : 900px;
         background-color          : #d4d3d3;
@@ -40,20 +37,15 @@
         border-top-right-radius   : 20px;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius : 20px;
-        
 
         .field-label {
           font-weight             : bold;
           margin                  : 30px 0 10px 0; 
         }
-        .konseki-box{
+        .sf-box{
           height                  : 30px;
           margin                  : 5px;
         }
-        #k-kaisu {
-          height                  : 30px;
-        }
-
 
         .field {
           .field-input {
@@ -62,7 +54,6 @@
 
         .field-2 {
           .field-input-2-1 {
-            margin                : 2px;
           }
           .field-input-2-2 {
             margin                : 2px;
@@ -73,6 +64,13 @@
         .reset-btn {
           margin                  : 20px 0 30px 0;
         }
+        .bar {
+          width                   : 800px;
+          margin-top              : 40px;
+          background-color        : #fff;
+          border-width            : 1px 0 0 0;
+          border-color            : black;
+        }
       }
     }
   }
@@ -80,12 +78,17 @@
 
 
 @media screen and (max-width: 479px) {        // スマホ表示
-  .konseki-body {
-    .link-to-sf {
+  .starforce-body {
+    // background-color              : #f5f5f5;
+    // background-size               : cover;
+    // background-repeat             : no-repeat;
+    // position                      : relative;
+
+    .link-to-konseki {
       padding                     : 0.3em 1em;
       text-decoration             : none;
-      color                       : black;
-      border                      : solid 2px black;
+      color                       : #67c5ff;
+      border                      : solid 2px #67c5ff;
       border-radius               : 3px;
       transition                  : .4s;
       border-top-left-radius      : 20px;
@@ -93,16 +96,16 @@
       border-bottom-right-radius  : 20px;
       border-bottom-left-radius   : 20px;
     }
-    .link-to-sf:hover {
-      background                  : black;
-      color                       : rgb(255, 232, 23);
+    .link-to-konseki:hover {
+      background                  : #67c5ff;
+      color                       : white;
     }
 
     &__contents {
       width                       : 100%;
       max-width                   : 1040px;
       position                    : relative;
-      
+
       &__form {
         width                     : 100%;
         background-color          : #d4d3d3;
@@ -112,17 +115,14 @@
         border-top-right-radius   : 20px;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius : 20px;
-        
+
         .field-label {
           font-weight             : bold;
           margin                  : 30px 0 10px 0; 
         }
-        .konseki-box{
+        .sf-box{
           height                  : 30px;
           margin                  : 5px;
-        }
-        #k-kaisu {
-          height                  : 30px;
         }
 
         .field {
@@ -132,7 +132,6 @@
 
         .field-2 {
           .field-input-2-1 {
-            margin                : 2px;
           }
           .field-input-2-2 {
             margin                : 2px;
@@ -142,6 +141,13 @@
 
         .reset-btn {
           margin                  : 20px 0 30px 0;
+        }
+        .bar {
+          width                   : 300px;
+          margin-top              : 40px;
+          background-color        : #fff;
+          border-width            : 1px 0 0 0;
+          border-color            : black;
         }
       }
     }

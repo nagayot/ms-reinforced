@@ -1,27 +1,30 @@
 %select{name: "k-kyouka-ama", class: 'konseki-box', id: 'kyouka-ama'}
   %option{value: "0"} 貼らない (攻撃or魔力)
-  %optgroup{label: "何％の書を貼る？(武器)"} 
+  %optgroup{label: "何％の書を貼る？(武器 * Lv:111〜)"} 
   %option{value: "2"} 100% = 攻撃or魔力 (+ 2)
   %option{value: "3"} 70% = 攻撃or魔力 (+ 3)
   %option{value: "4"} 30% = 攻撃or魔力 (+ 4)
   %option{value: "5"} 15% = 攻撃or魔力 (+ 5)
-  %optgroup{label: "何％の書を貼る？(手袋orハート)"}
+  %optgroup{label: "何％の書を貼る？(手袋/ハート * Lv:71〜)"}
   %option{value: "1"} 100% = 攻撃or魔力 (+ 1)
   %option{value: "2"} 70% = 攻撃or魔力 (+ 2)
   %option{value: "3"} 30% = 攻撃or魔力 (+ 3)
+  %optgroup{label: "何％の書を貼る？(手袋/ハート * Lv:0~70)"}
+  %option{value: "1"} 70% = 攻撃or魔力 (+ 1)
+  %option{value: "2"} 30% = 攻撃or魔力 (+ 2)
 
 %select{name: "k-kyouka-status", class: 'konseki-box', id: 'kyouka-status'}
   %option{value: "0"} 貼らない (メインステータス)
-  %optgroup{label: "何％の書を貼るの？(武器)"} 
+  %optgroup{label: "何％の書を貼る？(武器 * Lv:111〜)"} 
   %option{value: "1"} 100% = メインステータス (+ 1)
   %option{value: "2"} 70% = メインステータス (+ 2)
   %option{value: "3"} 30% = メインステータス (+ 3)
   %option{value: "4"} 15% = メインステータス (+ 4)
-  %optgroup{label: "何％の書を貼る？(防具：頭,鎧,靴,マント,盾,肩)"}
+  %optgroup{label: "何％の書を貼る？(防具：頭/鎧/靴/マント/盾/肩 * Lv:111〜)"}
   %option{value: "3"} 100% = メインステータス (+ 3)
   %option{value: "4"} 70% = メインステータス (+ 4)
   %option{value: "7"} 30% = メインステータス (+ 7)
-  %optgroup{label: "何％の書を貼る？(アクセサリ：顔,目,指輪)"}
+  %optgroup{label: "何％の書を貼る？(アクセサリ：顔/目/指輪 * Lv:111〜)"}
   %option{value: "2"} 100% = メインステータス (+ 2)
   %option{value: "3"} 70% = メインステータス (+ 3)
   %option{value: "5"} 30% = メインステータス (+ 5)
