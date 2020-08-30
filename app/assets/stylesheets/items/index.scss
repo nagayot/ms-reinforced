@@ -9,7 +9,7 @@
 
 @media screen and (min-width: 767px) {                  //pc表示
   .body {
-    background                : url(ms-haikei-2.jpg);
+    background                : image-url("ms-haikei-2.jpg");
     background-size           : cover;
     background-repeat         : no-repeat;
     height                    : 475px;
@@ -88,7 +88,7 @@
 
 @media screen and (max-width: 479px) {                  // スマホ表示
   .body {
-    background                : url(ms-haikei-2.jpg);
+    background                : image-url("ms-haikei-2.jpg");
     background-size           : cover;
     background-repeat         : no-repeat;
     margin                    : 20px 40px 10px 40px;
